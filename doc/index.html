@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>おかゆくんセリフジェネレーター</title>
+	<style type="text/css">
+		@font-face {
+			font-family: 'mplus-1p-black';
+			src: url('GenEiLateMin.otf') format('truetype');
+		}
+
+		div {
+			display: block;
+		}
+	</style>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div>
+		<canvas id="canvas" width="400px" height="500px"></canvas>
+	</div>
+	<div>
+		<input type="text" id="textbox" size="50" value="" spellcheck="false" oninput="redraw();">
+		<button type="button" onclick="saveImage();">画像を保存する</button>
+	</div>
+	<div>
+		おかゆくんコラ画像を生成するツールです。 文字数によってはうまく吹き出しに収まりません。
+	</div>
+	<div>
+		作者: teyoppe
+	</div>
+</body>
+
+</html>
 
